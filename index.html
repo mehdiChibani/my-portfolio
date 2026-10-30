@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehdi CHIBANI – Consultant senior en développement mobile fullstack</title>
+  <meta name="description" content="Portfolio de Mehdi Chibani, consultant senior en développement mobile full-stack spécialisé en React Native et Flutter. Applications assurance, services publics et fintech." />
+  <meta name="theme-color" content="#070d1a" />
+  <meta property="og:title" content="Mehdi CHIBANI – Consultant senior en développement mobile fullstack" />
+  <meta property="og:description" content="Portfolio de Mehdi Chibani, consultant senior en développement mobile full-stack spécialisé en React Native et Flutter. Applications assurance, services publics et fintech." />
+  <meta property="og:image" content="assets/img/mehdi.jpg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- apply the saved theme before first paint (no flash) -->
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+        var savedLang = localStorage.getItem("lang");
+        if (savedLang === "en" || savedLang === "fr") document.documentElement.lang = savedLang;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Mehdi Chibani – accueil">
+        <span class="brand-mark">MC</span>
+        <span class="brand-name">Mehdi<b>.dev</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#experience" data-i18n="nav.experience">Expérience</a>
+        <a href="#apps" data-i18n="nav.apps">Apps publiées</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#education" data-i18n="nav.education">Formations</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.hire">Discutons</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Langue">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="icon-btn" id="themeToggle" data-i18n-aria="theme.toggle" aria-label="Basculer thème clair / sombre">
+          <span data-icon="moon" class="ico-moon"></span>
+          <span data-icon="sun" class="ico-sun"></span>
+        </button>
+        <button type="button" class="icon-btn menu-btn" id="menuBtn" data-i18n-aria="menu.toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+          <span data-icon="menu" class="ico-open"></span>
+          <span data-icon="x" class="ico-close"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="glow glow-a"></span>
+        <span class="glow glow-b"></span>
+        <span class="grid-lines"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="hero.eyebrow">Consultant senior en développement mobile</span></p>
+
+          <h1 class="hero-name">
+            <span class="first">Mehdi</span>
+            <span class="last">CHIBANI</span>
+          </h1>
+
+          <p class="hero-role" data-i18n-html="hero.role">Consultant senior en développement mobile<br />React Native / Flutter &amp; Spring</p>
+
+          <ul class="tech-icons" aria-label="Platforms">
+            <li class="t-react" title="React Native"><span data-icon="react"></span></li>
+            <li class="t-flutter" title="Flutter"><span data-icon="flutter"></span></li>
+            <li class="t-spring" title="Spring Boot"><span data-icon="spring"></span></li>
+            <li class="sep" aria-hidden="true"></li>
+            <li class="t-apple" title="iOS"><span data-icon="apple"></span></li>
+            <li class="sep" aria-hidden="true"></li>
+            <li class="t-android" title="Android"><span data-icon="android"></span></li>
+          </ul>
+
+          <p class="hero-tagline" data-i18n="hero.tagline">
+            J'interviens sur la conception et la refonte d'applications à fort enjeu, notamment dans les secteurs de l'assurance et services publics.
+          </p>
+
+          <ul class="feature-grid">
+            <li><span data-icon="layers"></span><span data-i18n="hero.f1">Clean Architecture</span></li>
+            <li><span data-icon="cloud"></span><span data-i18n="hero.f4">Intégration d'API</span></li>
+            <li><span data-icon="zap"></span><span data-i18n="hero.f2">Performance</span></li>
+            <li><span data-icon="smartphone"></span><span data-i18n="hero.f5">UI/UX</span></li>
+            <li><span data-icon="refresh"></span><span data-i18n="hero.f3">Agile / Scrum</span></li>
+            <li><span data-icon="users"></span><span data-i18n="hero.f6">Mentorat</span></li>
+          </ul>
+
+          <div class="hero-actions">
+            <div class="hero-contacts">
+              <a href="tel:+212662035527" class="phone-btn">
+                <span data-icon="phone"></span><span>+212662035527</span>
+              </a>
+              <a href="https://linkedin.com/in/mehdi-chibani-rn" class="social-btn" target="_blank" rel="noopener" aria-label="LinkedIn"><span data-icon="linkedin"></span></a>
+              <a href="mailto:mehdichibani2@gmail.com" class="email-btn" aria-label="E-mail">
+                <span data-icon="mail"></span><span>mehdichibani2@gmail.com</span>
+              </a>
+            </div>
+            <div class="hero-ctas">
+              <a href="#experience" class="btn btn-primary">
+                <span data-i18n="hero.cta">Voir mes expériences</span><span data-icon="arrow"></span>
+              </a>
+              <a href="assets/Mehdi_CHIBANI_CV_FR.pdf" class="btn btn-ghost" id="cvLink" download>
+                <span data-icon="download"></span><span data-i18n="hero.cv">Télécharger le CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="photo-frame">
+            <img src="assets/img/mehdi.jpg" alt="Mehdi Chibani, développeur mobile, souriant à son bureau avec un ordinateur portable" width="1024" height="768" fetchpriority="high" />
+          </div>
+          <div class="chip chip-b"><span data-icon="pin"></span><span data-i18n="hero.chip2">Basé au Maroc</span></div>
+          <div class="chip chip-c"><span class="dot"></span>React Native · Flutter</div>
+        </div>
+      </div>
+
+      <!-- stats -->
+      <div class="container">
+        <dl class="stats" id="stats">
+          <div class="stat"><dt data-i18n="stats.years">Années d'expérience professionnelle</dt><dd><span class="count" data-count="years">6</span>+</dd></div>
+          <div class="stat"><dt data-i18n="stats.clients">Grands clients (assurance, services publics et santé)</dt><dd><span class="count" data-count="5">5</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="kicker" data-i18n="about.kicker">À propos</p>
+          <h2 class="section-title" data-i18n="about.title">Consultant senior en développement mobile full-stack</h2>
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+        </div>
+        <div class="skills-card reveal" id="skills">
+          <h3 class="skills-title mono" data-i18n="about.skills">Boîte à outils</h3>
+          <!-- rendered by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker" data-i18n="exp.kicker">Parcours</p>
+          <h2 class="section-title" data-i18n="exp.title">Expérience</h2>
+          <p class="section-sub" data-i18n="exp.sub"></p>
+        </header>
+
+        <ol class="timeline" id="timeline"><!-- rendered by main.js --></ol>
+
+        <h3 class="subhead reveal" data-i18n="exp.early">Débuts – stages</h3>
+        <div class="intern-grid" id="internships"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ SHIPPED APPS ============ -->
+    <section class="section" id="apps">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker" data-i18n="apps.kicker">En production</p>
+          <h2 class="section-title" data-i18n="apps.title">Apps que j'ai publiées pour mes clients</h2>
+          <p class="section-sub" data-i18n="apps.sub"></p>
+        </header>
+        <div class="apps-grid" id="appsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker" data-i18n="proj.kicker">Side projects</p>
+          <h2 class="section-title" data-i18n="proj.title">Projets personnels &amp; académiques</h2>
+          <p class="section-sub" data-i18n="proj.sub"></p>
+        </header>
+        <div class="projects-grid" id="projectsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker" data-i18n="edu.kicker">Parcours académique</p>
+          <h2 class="section-title" data-i18n="edu.title">Formations</h2>
+        </header>
+        <div class="edu-grid" id="eduGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 class="section-title" data-i18n="contact.title">Construisons quelque chose de grand ensemble</h2>
+          <p class="section-sub" data-i18n="contact.sub"></p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:mehdichibani2@gmail.com">
+              <span data-icon="mail"></span>
+              <span><small data-i18n="contact.email">E-mail</small>mehdichibani2@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+212662035527">
+              <span data-icon="phone"></span>
+              <span><small data-i18n="contact.phone">Téléphone</small>+212 662035527</span>
+            </a>
+            <a class="contact-item" href="https://linkedin.com/in/mehdi-chibani-rn" target="_blank" rel="noopener">
+              <span data-icon="linkedin"></span>
+              <span><small>LinkedIn</small>mehdi-chibani-rn</span>
+            </a>
+            <a class="contact-item" href="https://github.com/mehdiChibani" target="_blank" rel="noopener">
+              <span data-icon="github"></span>
+              <span><small>GitHub</small>mehdiChibani</span>
+            </a>
+          </div>
+
+          <a href="mailto:mehdichibani2@gmail.com" class="btn btn-primary btn-lg">
+            <span data-i18n="contact.cta">M'envoyer un e-mail</span><span data-icon="arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Mehdi CHIBANI. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <a href="#top" class="to-top"><span data-i18n="footer.top">Retour en haut</span><span data-icon="arrow" class="up"></span></a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+    <button class="lightbox-backdrop" type="button" data-lightbox-close tabindex="-1" aria-label="Fermer" data-i18n-aria="apps.close"></button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" alt="" />
+      <button class="lightbox-close" id="lightboxClose" type="button" data-lightbox-close data-i18n-aria="apps.close" aria-label="Fermer">
+        <span data-icon="x"></span>
+      </button>
+    </figure>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
