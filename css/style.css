@@ -151,6 +151,9 @@ button {
 }
 
 /* ---------- Buttons / chips ---------- */
+.btn[hidden] {
+  display: none;
+}
 .btn {
   display: inline-flex;
   align-items: center;

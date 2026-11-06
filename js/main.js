@@ -189,6 +189,12 @@
 
     $$(".lang-switch button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     $("#cvLink").setAttribute("href", PROFILE.cv[lang]);
+    const classicLink = $("#cvClassicLink");
+    if (classicLink) {
+      const showClassic = lang === "fr" && PROFILE.cv.frClassic;
+      classicLink.hidden = !showClassic;
+      if (showClassic) classicLink.setAttribute("href", PROFILE.cv.frClassic);
+    }
   }
 
   function renderAll(instant = false) {

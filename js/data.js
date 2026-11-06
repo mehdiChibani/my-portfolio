@@ -9,7 +9,11 @@ const PROFILE = {
   phoneHref: "+212662035527",
   linkedin: "https://linkedin.com/in/mehdi-chibani-rn",
   github: "https://github.com/mehdiChibani",
-  cv: { en: "assets/Mehdi_CHIBANI_CV_EN.pdf", fr: "assets/Mehdi_CHIBANI_CV_FR.pdf" },
+  cv: {
+    en: "assets/Mehdi_CHIBANI_CV_EN.pdf",
+    fr: "assets/Mehdi_CHIBANI_CV_FR.pdf",
+    frClassic: "assets/Mehdi_CHIBANI_CV_FR_classique.pdf",
+  },
   startYear: 2020, // first professional position (used for "years of experience")
 };
 
@@ -38,6 +42,7 @@ const I18N = {
     "hero.f6": "Mentoring",
     "hero.cta": "View My Experience",
     "hero.cv": "Download CV",
+    "hero.cvClassic": "Download the classic CV",
     "hero.chip2": "Based in Morocco",
     "stats.years": "Years of professional experience",
     "stats.clients": "Major clients (insurance, public services and healthcare)",
@@ -109,7 +114,8 @@ const I18N = {
     "hero.f5": "UI/UX",
     "hero.f6": "Mentorat",
     "hero.cta": "Voir mes expériences",
-    "hero.cv": "Télécharger le CV",
+    "hero.cv": "Télécharger le CV en version simplifiée",
+    "hero.cvClassic": "Télécharger le CV en format classique",
     "hero.chip2": "Basé au Maroc",
     "stats.years": "Années d'expérience professionnelle",
     "stats.clients": "Grands clients (assurance, services publics et santé)",
@@ -229,7 +235,7 @@ const EXPERIENCE = [
           en: [
             "Implemented a secure authentication system, including biometric login.",
             "Developed an automated PDF delay certificate generation feature, accessible via QR code scanning of train tickets.",
-            "Integrated a front-camera-based face detection module for generating user profile photos and identification cards.",
+            "Integrated a front-camera-based face detection module for generating user profile pictures and travel cards",
             "Integrated and optimized key features including discount-card association, segmented push notifications and deep-linking to improve user engagement and retention.",
           ],
           fr: [
@@ -259,14 +265,14 @@ const EXPERIENCE = [
         period: { en: "Aug 2023 – Feb 2025", fr: "Août 2023 – Fév. 2025" },
         play: PLAY.wafa,
         summary: {
-          en: "Contributed to the end-to-end modernization of the My Wafa application, a digital platform for managing automobile insurance claims, health insurance, savings and home multi-risk policies.",
+          en: "Contributed to the end-to-end technical and design overhaul of the My Wafa mobile application, a digital platform for managing automobile, health insurance, savings and home multi-risk policies.",
           fr: "Contribution á la refonte de l'application My Wafa pour la gestion des dossiers d'assurance automobile, santé, épargne et multirisques d'habitation.",
         },
         bullets: {
           en: [
-            "Collaborated with product and business teams to analyze requirements and redesign core business workflows and service processing logic.",
+            "Development and integration of a real-time claims tracking feature, enabling users to monitor the status and progress of their claims.",
             "Developed a geolocation-based feature for emergency assistance and locating approved garages.",
-            "Implemented a photo capture feature enabling real-time processing of car insurance claims using images of damaged vehicles.",
+            "Implemented a photo capture feature enabling real-time processing of car insurance claims using pictures of damaged vehicles.",
           ],
           fr: [
             "Intégration du module de suivi en temps réel de l'avancement des dossiers de sinistres.",
@@ -287,9 +293,9 @@ const EXPERIENCE = [
         },
         bullets: {
           en: [
-            "Analyzed and translated business requirements related to young residents' access to cultural and public services.",
+            "Development and integration of multiple payment flows using React Native WebView and In-App Browser.",
             "Designed and implemented a geolocation-based feature to display nearby offers and services.",
-            "Developed and maintained the app for both iOS and Android using React Native.",
+            "Developed a seat booking system for theaters and performance halls, with an interactive, real-time seating map showing available seats.",
             "Performed unit testing, troubleshooting and debugging to ensure quality, reliability and performance.",
           ],
           fr: [
@@ -312,9 +318,9 @@ const EXPERIENCE = [
         },
         bullets: {
           en: [
-            "Analyzed business processes around health claims, beneficiary administration and coverage workflows.",
-            "Technical design and implementation of core features: medical claims, beneficiary consultation and coverage tracking.",
-            "Developed a geolocation service to locate nearby on-duty pharmacies.",
+            "Thechnical design and development of features for managing and tracking medical records.",
+            "Implemented a geolocation system to display nearby on-duty pharmacies based on the user's location.",
+            "Implemented key features, including beneficiary management, beneficiary record access, coverage tracking, and push notifications.",
           ],
           fr: [
             "Conception et développement des fonctionnalités de gestion et suivi des dossiers de santé.",
